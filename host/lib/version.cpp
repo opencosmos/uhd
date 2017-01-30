@@ -20,6 +20,7 @@
 #include <boost/version.hpp>
 #include <iostream>
 
+#ifdef I_DONT_CARE_ABOUT_UNIX_PHILOSOPHY_I_WANT_TO_MAKE_POINTLESS_NOISE
 #ifndef UHD_DONT_PRINT_SYSTEM_INFO
 UHD_STATIC_BLOCK(print_system_info){
     std::cout
@@ -30,6 +31,7 @@ UHD_STATIC_BLOCK(print_system_info){
         << std::endl << std::endl
     ;
 }
+#endif
 #endif
 
 std::string uhd::get_version_string(void){
